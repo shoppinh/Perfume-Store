@@ -1,0 +1,40 @@
+.VideoIntroduction {
+  background-image: url("../../resources/img/Video-BG.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.VideoIntroduction-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.VideoIntroduction-container {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.VideoIntroduction-title {
+  font-size: 38px;
+  font-weight: 600;
+}
+.VideoIntroduction-description {
+  flex: 1;
+}
+.VideoIntroduction-video {
+  flex: 1;
+}

@@ -12,7 +12,7 @@ const SliderBrands: FC = () => {
   };
 
   return (
-    <div className="container text-center my-3 mt-5">
+    <div className="container text-center  SliderBrands">
       <h2 className="Brands-Title">Brands</h2>
       <Carousel {...settings}>
         <Carousel.Item className="row">

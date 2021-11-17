@@ -10,6 +10,8 @@ import ScrollButton from "../../component/ScrollButton/ScrollButton";
 import Introduction from "../../component/Introduction/Introduction";
 import Specification from "../../component/Specification/Specification";
 import AboutUs from "../../component/AboutUs/AboutUs";
+import VideoIntroduction from "../../component/VideoIntroduction/VideoIntroduction";
+import SendEmail from "../../component/SendEmail/SendEmail";
 const HomePage: FC = () => {
   const dispatch = useDispatch();
 
@@ -29,7 +31,9 @@ const HomePage: FC = () => {
       <SliderBrands />
       <HomePageTheme />
       <AboutUs />
+      <VideoIntroduction />
       <SliderCards />
+      <SendEmail />
     </div>
   );
 };
