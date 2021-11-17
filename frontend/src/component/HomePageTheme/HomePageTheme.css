@@ -1,0 +1,48 @@
+.HomepageImageW {
+  background-image: url("../../resources/img/women-perfume.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+.HomepageImageM {
+  background-image: url("../../resources/img/men-perfume.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.HomepageImageM-Overlay,
+.HomepageImageW-Overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  opacity: 0.4;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.HomePageImage_Detail {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  z-index: 2;
+}
+.HomepageImageW-Overlay:hover,
+.HomepageImageM-Overlay:hover,
+.HomePageImage_Detail:hover .HomepageImageW-Overlay {
+  opacity: 0.8;
+}
+
+.HomePageImage_Detail h2,
+.HomePageImage_Detail a {
+  color: #fff;
+}
+.HomePageTheme-title {
+  font-size: 42px;
+  font-weight: 600;
+  color: #a05f43;
+}

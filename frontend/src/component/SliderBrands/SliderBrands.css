@@ -1,3 +1,7 @@
 .carousel-indicators li {
-    background-color: black;
+  background-color: black;
+}
+.Brands-Title {
+  color: #a05f43;
+  font-weight: 600;
 }

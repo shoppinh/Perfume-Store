@@ -1,15 +1,20 @@
-html {
-    position: relative;
-    min-height: 100%;
+.page-footer {
+  margin-top: 100px;
+  background-color: #a05f43;
+  color: #fff;
 }
-
-body {
-    margin-bottom: 400px;
+.logo {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    z-index: -1;
+.logoImg {
+  height: auto;
+  width: 20%;
+}
+.quote {
+  width: 50%;
+  text-align: center;
+  margin-top: 20px;
 }

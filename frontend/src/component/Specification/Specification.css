@@ -1,0 +1,18 @@
+.Specification {
+  width: 1200px;
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.Specification-box {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+}
+.Specification-icon {
+  font-size: 32px;
+  color: #a05f43;
+}
+.Specification-title {
+  color: #a05f43;
+}

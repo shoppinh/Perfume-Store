@@ -1,0 +1,54 @@
+.Introduction {
+  background-image: url(../../resources/img/background.jpg);
+  background-color: #f6f1ee;
+  background-position: 15vw -15vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 700px;
+  width: 100%;
+}
+.Introduction-Wrapper {
+  margin: 0 15vw;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.Intro-section {
+  padding-top: 15%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  background-color: #f6f1ee;
+}
+.element-title {
+  margin-top: 20px;
+  color: #a05f43;
+  font-size: 52px;
+  font-weight: 600;
+}
+.element-widget-container {
+  font-size: 18px;
+  padding-left: 2px;
+}
+.element-para {
+  width: 60%;
+  margin: 20px 0;
+  color: #7a7a7a;
+}
+.element-button {
+  width: 160px;
+  fill: #fff;
+  color: #fff;
+  padding: 18px 38px;
+  background-color: #a05f43;
+  transition: all 0.8s ease;
+}
+.element-button:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+.element-button a {
+  color: #fff;
+}

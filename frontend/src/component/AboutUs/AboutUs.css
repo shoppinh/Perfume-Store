@@ -1,0 +1,87 @@
+.AboutUs {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  margin-top: 80px;
+}
+.AboutUs-overlay {
+  background-image: url("../../resources/img/flower-about.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.AboutUs-container {
+  display: flex;
+}
+.AboutUs-SideImg {
+  width: 468px;
+  height: 468px;
+}
+.AboutUs-detail {
+  margin-left: 40px;
+}
+.Benefits {
+  display: flex;
+}
+.Benefits-list {
+  margin-right: 60px;
+}
+.Benefits ul {
+  list-style-type: none;
+  padding: 0;
+}
+.Benefits ul li:before {
+  content: "✓";
+  padding-right: 10px;
+  color: #a05f43;
+  font-size: 18px;
+  font-weight: 600;
+}
+.AboutUs-title {
+  color: #a05f43;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.AboutUs-description {
+  color: #7a7a7a;
+  margin-bottom: 30px;
+}
+.AboutUs-Button-list {
+  display: flex;
+  margin-top: 20px;
+}
+.AboutUs-Button {
+  margin-right: 60px;
+  width: 170px;
+  fill: #fff;
+  color: #fff;
+  padding: 18px 24px 18px 42px;
+  background-color: #a05f43;
+  transition: all 0.8s ease;
+}
+.AboutUs-Button2 {
+  margin-right: 60px;
+  width: 170px;
+  border: 1px solid #a05f43;
+  color: #a05f43;
+  padding: 18px 24px 18px 42px;
+  background-color: #fff;
+  transition: all 0.8s ease;
+}
+.AboutUs-Button a {
+  color: #fff;
+}
+.AboutUs-Button2 a {
+  color: #a05f43;
+}
+.AboutUs-Button:hover,
+.AboutUs-Button2:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+}
