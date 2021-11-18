@@ -1,5 +1,5 @@
 # Base Package
-FROM node:14 as build-step
+FROM node:14
 
 
 # Create app directory
@@ -15,10 +15,7 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-RUN npm run build
-
 #RUN yarn install
 EXPOSE 3000
-# Stage 2
-FROM nginx:1.17.1-alpine
-COPY --from=build-step /usr/src/app/build /usr/share/nginx/html
+# Initiate npm start
+CMD [ "npm", "run-script", "start" ]

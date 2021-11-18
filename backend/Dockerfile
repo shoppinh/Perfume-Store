@@ -22,4 +22,7 @@ RUN ls -l
 COPY --from=0  /root/.m2/repository/com/gmail/merikbest2015/ecommerce/0.0.1-SNAPSHOT/ecommerce-0.0.1-SNAPSHOT.jar ecommerce-0.0.1-SNAPSHOT.jar
 
 # Fire up our Spring Boot app by default
-CMD ["sh", "-c", "java -Dserver.port=8080 -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8 -XX:+UseContainerSupport  -Djava.security.egd=file:/dev/./urandom -jar ecommerce-0.0.1-SNAPSHOT.jar" ]
+# CMD ["sh", "-c", "java -Dserver.port=8080 -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8 -XX:+UseContainerSupport  -Djava.security.egd=file:/dev/./urandom -jar ecommerce-0.0.1-SNAPSHOT.jar" ]
+
+ENTRYPOINT ["java", "-jar","ecommerce-0.0.1-SNAPSHOT.jar"]
+EXPOSE 8080

@@ -37,10 +37,15 @@ services:
       dockerfile: ./backend/Dockerfile
     container_name: backend-service-container
     restart: always
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/perfume
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=maychila1
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
     depends_on:
       - postgres
     ports:
-      - 8081:8080
+      - 8080:8080
     networks:
       - perfume-service
 networks:
