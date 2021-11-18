@@ -1,0 +1,51 @@
+version: "3.5"
+
+services:
+  postgres:
+    container_name: postgres_db
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: maychila1
+      POSTGRES_DB: perfume
+    ports:
+      - 5433:5432
+    networks:
+      - perfume-service
+    restart: always
+
+  frontend-service:
+    build:
+      context: .
+      dockerfile: ./frontend/Dockerfile
+    container_name: frontend-service-container
+    restart: always
+    expose:
+      - 3000
+    ports:
+      - 3001:3000
+    volumes:
+      - ./frontend:/usr/src/app
+      - /usr/src/app/node_modules
+    depends_on:
+      - backend-service
+    networks:
+      - perfume-service
+
+  backend-service:
+    build:
+      context: .
+      dockerfile: ./backend/Dockerfile
+    container_name: backend-service-container
+    restart: always
+    depends_on:
+      - postgres
+    expose:
+      - 8080
+    ports:
+      - 8081:8080
+    networks:
+      - perfume-service
+networks:
+  perfume-service:
+    external: true
