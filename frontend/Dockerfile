@@ -1,17 +1,12 @@
-# Base Package
-FROM node:14
-
-
-# Create app directory
-WORKDIR /usr/src/app
-
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-WORKDIR /usr/src/app
-COPY package*.json ./
+# Step 1
+FROM node:10-alpine as build-step
+RUN mkdir /app
+WORKDIR /app
+COPY package.json /app
 RUN npm install
-COPY . .
+COPY . /app
+RUN npm run build
 
-# Initiate npm start
-CMD ["npm","run", "start"]
+# Stage 2
+FROM nginx:1.17.1-alpine
+COPY --from=build-step /app/build /usr/share/nginx/html
