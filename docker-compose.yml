@@ -19,11 +19,10 @@ services:
       context: .
       dockerfile: ./frontend/Dockerfile
     container_name: frontend-service-container
+    stdin_open: true
     restart: always
-    expose:
-      - 3000
     ports:
-      - 3001:3000
+      - 3000:3000
     volumes:
       - ./frontend:/usr/src/app
       - /usr/src/app/node_modules
@@ -40,8 +39,6 @@ services:
     restart: always
     depends_on:
       - postgres
-    expose:
-      - 8080
     ports:
       - 8081:8080
     networks:
