@@ -2,6 +2,20 @@
 .MenuPage {
   height: 1500px;
 }
+/* Product List Title*/
+.imgTitle {
+  background-image: url(../../resources/img/page-title-productlist.jpg);
+  background-position: center center;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+.pageTitle {
+  font-size: 80px;
+  padding-left: 30px;
+  font-weight: 200;
+}
 /* SIDEBAR */
 
 #sidebar {
@@ -56,6 +70,9 @@
 #sidebar ul li a:hover {
   color: #7386d5;
   background-color: #fff;
+}
+.sideBarImg {
+  width: 100%;
 }
 
 #sidebar ul li.active > a,

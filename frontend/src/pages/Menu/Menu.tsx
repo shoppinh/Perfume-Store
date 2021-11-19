@@ -16,7 +16,7 @@ import "./MenuStyle.css";
 import { AppStateType } from "../../redux/reducers/root-reducer";
 import { FilterParamsType, Perfume } from "../../types/types";
 import ScrollButton from "../../component/ScrollButton/ScrollButton";
-
+import SidebarImg from "../../resources/img/sidebar-img.jpg";
 const Menu: FC = () => {
   const dispatch = useDispatch();
   const perfumes: Array<Perfume> = useSelector(
@@ -83,54 +83,61 @@ const Menu: FC = () => {
   };
 
   return (
-    <div className="container d-flex MenuPage">
-      <ScrollButton />
-      <nav id="sidebar">
-        <div className="sidebar-header">
-          <h3>Perfumes</h3>
-        </div>
-        <ul className="list-unstyled components">
-          <h5>Brand</h5>
-          <li className="active mb-2" id="homeSubmenu">
-            <Checkbox
-              list={perfumer}
-              handleFilters={(filters) => handleFilters(filters, "perfumers")}
+    <>
+      <div className="imgTitle">
+        <h1 className="pageTitle">Perfume Catalog</h1>
+      </div>
+
+      <div className="container d-flex MenuPage">
+        <ScrollButton />
+        <nav id="sidebar">
+          <div className="sidebar-header">
+            <h3>Perfumes</h3>
+          </div>
+          <ul className="list-unstyled components">
+            <h5>Brand</h5>
+            <li className="active mb-2" id="homeSubmenu">
+              <Checkbox
+                list={perfumer}
+                handleFilters={(filters) => handleFilters(filters, "perfumers")}
+              />
+            </li>
+            <h5>Gender</h5>
+            <li className="active mb-2">
+              <Checkbox
+                list={gender}
+                handleFilters={(filters) => handleFilters(filters, "genders")}
+              />
+            </li>
+            <h5>Price</h5>
+            <li className="active mb-2">
+              <CheckboxRadio
+                list={price}
+                handleFilters={(filters) => handleFilters(filters, "prices")}
+              />
+            </li>
+          </ul>
+          <img src={SidebarImg} alt="" className="sideBarImg" />
+        </nav>
+        <Route
+          exact
+          component={() => (
+            <MenuCards
+              data={perfumes}
+              loading={loading}
+              itemsPerPage={8}
+              searchByData={[
+                { label: "Brand", value: "perfumer" },
+                { label: "Perfume title", value: "perfumeTitle" },
+                { label: "Manufacturer country", value: "country" },
+              ]}
+              sortByPrice={sortByPrice}
+              handleSortByPrice={handleSortByPrice}
             />
-          </li>
-          <h5>Gender</h5>
-          <li className="active mb-2">
-            <Checkbox
-              list={gender}
-              handleFilters={(filters) => handleFilters(filters, "genders")}
-            />
-          </li>
-          <h5>Price</h5>
-          <li className="active mb-2">
-            <CheckboxRadio
-              list={price}
-              handleFilters={(filters) => handleFilters(filters, "prices")}
-            />
-          </li>
-        </ul>
-      </nav>
-      <Route
-        exact
-        component={() => (
-          <MenuCards
-            data={perfumes}
-            loading={loading}
-            itemsPerPage={8}
-            searchByData={[
-              { label: "Brand", value: "perfumer" },
-              { label: "Perfume title", value: "perfumeTitle" },
-              { label: "Manufacturer country", value: "country" },
-            ]}
-            sortByPrice={sortByPrice}
-            handleSortByPrice={handleSortByPrice}
-          />
-        )}
-      />
-    </div>
+          )}
+        />
+      </div>
+    </>
   );
 };
 
