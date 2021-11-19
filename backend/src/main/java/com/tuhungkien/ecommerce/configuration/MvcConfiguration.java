@@ -29,14 +29,12 @@ public class MvcConfiguration implements WebMvcConfigurer {
 
         registry.addResourceHandler("/image/**")
                 .addResourceLocations("classpath:/image/");
-        registry.addResourceHandler("/graphql/**")
-                .addResourceLocations("classpath:/graphql/");
     }
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/v1/**")
-                .allowedOrigins("*")
+                .allowedOrigins("http://" + hostname)
                 .allowedMethods("HEAD", "OPTIONS", "GET", "POST", "PUT", "PATCH", "DELETE")
                 .allowedHeaders("*");
     }
