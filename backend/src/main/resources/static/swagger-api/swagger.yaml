@@ -659,7 +659,26 @@ paths:
             'application/json':
               schema:
                 $ref: "#/components/schemas/PerfumeResponse"
-
+  /api/v1/perfumes/most-star/{num}:
+    get:
+      tags:
+        - "PerfumeController"
+      summary: "Get perfume most star"
+      operationId: "getPerfumeMostStar"
+      parameters:
+        - name: "num"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            'application/json':
+              schema:
+                $ref: "#/components/schemas/PerfumeResponse"
   /api/v1/perfumes/ids:
     post:
       tags:
