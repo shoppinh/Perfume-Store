@@ -1,0 +1,46 @@
+.perfume-card-item:hover .item-image {
+  transform: scale(1.1);
+}
+.button-list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.card-description {
+}
+.button-list__item {
+  text-align: center;
+  flex: 1;
+  margin: 0;
+  padding: 12px 10px;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  border-color: #232323;
+  border: solid 1px;
+}
+.button-list__show {
+  background-image: linear-gradient(to top, black 50%, transparent 50%);
+  cursor: pointer;
+  border-right: none;
+}
+
+.button-list__show a {
+  text-decoration: none;
+  background-image: linear-gradient(to top, #fff 50%, #000 50%);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.button-list__show a,
+.button-list__show {
+  background-size: 100% 200%;
+  background-position: top;
+  transition: background-position 0.5s ease-in-out;
+}
+.button-list__show:hover,
+.button-list__show:hover a {
+  background-position: bottom;
+}

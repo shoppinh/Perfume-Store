@@ -4,6 +4,7 @@
   background-size: cover;
   height: 500px;
   position: relative;
+  transition: all 0.3s ease;
 }
 .HomepageImageM {
   background-image: url("../../resources/img/men-perfume.jpg");
@@ -11,9 +12,10 @@
   background-size: cover;
   height: 500px;
   position: relative;
+  transition: all 0.3s ease;
 }
 
-.HomepageImageM-Overlay,
+/* .HomepageImageM-Overlay,
 .HomepageImageW-Overlay {
   position: absolute;
   top: 0;
@@ -23,18 +25,17 @@
   background-color: #333;
   opacity: 0.4;
   z-index: 1;
-  transition: all 0.3s ease;
-}
+  transition: all 0.3s ease;} */
+
 .HomePageImage_Detail {
   position: absolute;
   bottom: 5%;
   left: 5%;
   z-index: 2;
 }
-.HomepageImageW-Overlay:hover,
-.HomepageImageM-Overlay:hover,
-.HomePageImage_Detail:hover .HomepageImageW-Overlay {
-  opacity: 0.8;
+.HomepageImageW:hover,
+.HomepageImageM:hover {
+  transform: scale(1.1);
 }
 
 .HomePageImage_Detail h2,
