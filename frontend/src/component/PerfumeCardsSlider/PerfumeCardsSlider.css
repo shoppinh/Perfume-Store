@@ -1,3 +1,27 @@
 #indicators .carousel-indicators {
     margin: -50px;
 }
+
+.header_perfume_product{
+    text-align: center;
+    color: #000;
+    font-size:18px;
+    font-weight:400;
+    line-height:1em;
+    font-family: "DM Sans", Sans-serif;
+}
+
+.header_perfume_product_our{
+    color: #a05f43;
+    font-size:38px;
+    font-weight:600;
+    line-height:1em;
+    font-family: "DM Sans", Sans-serif;
+}
+
+.header_perfume_content{
+    text-align: center;
+    color: #7A7A7A;
+    font-size:16px;
+    font-weight:400;
+}
