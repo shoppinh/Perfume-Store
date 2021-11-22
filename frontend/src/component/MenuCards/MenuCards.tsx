@@ -51,7 +51,7 @@ const MenuCards: FC<PropsType> = ({
           setSearching={setSearching}
         />
       </div>
-      <div className="container-fluid mt-3 ml-2" style={{ flexWrap: "wrap" }}>
+      <div className="container mt-3 ml-2" style={{}}>
         <div className="row">
           <div className="col-md-6">
             <PaginationItem
