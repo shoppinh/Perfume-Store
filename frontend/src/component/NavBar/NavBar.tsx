@@ -77,10 +77,12 @@ const NavBar: FC = () => {
         >
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <div className="logo-nav-item">
-              <img
-                src="https://templatekit.jegtheme.com/cologne/wp-content/uploads/sites/180/2021/10/cologne.png"
-                className="rounded mx-auto d-block headerLogo"
-              />
+              <a href="/">
+                <img
+                  src="https://templatekit.jegtheme.com/cologne/wp-content/uploads/sites/180/2021/10/cologne.png"
+                  className="rounded mx-auto d-block headerLogo"
+                />
+              </a>
             </div>
             <ul className="navbar-nav">
               <li className="nav-item">

@@ -14,16 +14,31 @@ const Footer: FC = () => {
             necessitatibus, deleniti atque libero?
           </div>
         </div>
-        <div className="d-flex justify-content-between">
-          <div className="footer-left">
+        <div
+          className="d-flex justify-content-between"
+          style={{ marginTop: "30px" }}
+        >
+          <div className="footer-col">
             <h3>Perfume</h3>
             <p>(066) 696-66-23</p>
             <br />
             <p>from 08:00 to 20:00 without breaks and weekends</p>
           </div>
-          <div className="footer-right">
+          <div className="footer-col">
+            <h3>Other Pages</h3>
+            <p className="footer-link">
+              <a href="/about">About</a>
+            </p>
+            <p className="footer-link">
+              <a href="/contacts">Contacts</a>
+            </p>
+            <p className="footer-link">
+              <a href="/menu">Perfume</a>
+            </p>
+          </div>
+          <div className="footer-col">
             <h3>Social networks</h3>
-            <a href="https://www.linkedin.com/in/merikbest/">
+            <a href="https://www.linkedin.com/in/mac-kien-679829193/">
               <i
                 className="fab fa-linkedin fa-2x mr-3"
                 style={{ color: "white" }}
@@ -44,7 +59,7 @@ const Footer: FC = () => {
           </div>
         </div>
         <div className="mx-auto" style={{ width: "200px" }}>
-          <p>© Copy right merikbest</p>
+          <p>© Copy right Kienneik</p>
         </div>
       </div>
     </footer>

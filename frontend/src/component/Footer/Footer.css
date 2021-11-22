@@ -18,3 +18,9 @@
   text-align: center;
   margin-top: 20px;
 }
+.footer-link a {
+  color: #fff;
+}
+.footer-col {
+  max-width: 250px;
+}

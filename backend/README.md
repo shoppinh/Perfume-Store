@@ -1,36 +1,33 @@
-[![Build Status](https://travis-ci.com/merikbest/ecommerce-spring-reactjs.svg?branch=travis-ci-test)](https://travis-ci.com/merikbest/ecommerce-spring-reactjs)
-[![codecov](https://codecov.io/gh/merikbest/ecommerce-spring-reactjs/branch/travis-ci-test/graph/badge.svg?token=sEfOfpBHDX)](https://codecov.io/gh/merikbest/ecommerce-spring-reactjs)
-
 # :hibiscus: Perfume web store
 
 E-commerce project developed using Spring Boot and React.js.<br>
 
 #### An actual version of build is deployed on AWS:
-http://perfumesweb.tk <br>
-Login: admin@gmail.com <br> 
+
+Login: admin@gmail.com <br>
 Password: admin
 
 ## Used Technologies:
 
-* Back-end: Spring (Boot, Data, Security), JPA / Hibernate, PostgreSQL, JUnit, Mockito
-* Front-end: TypeScript, React.js, Redux, Jest, Bootstrap, CSS
-* Security: JWT, OAuth2 Google, Facebook, Github
-* REST API, GraphQL API
-* AWS: EC2, S3, PostgreSQL RDS
-* Server Build: Maven
-* Client Build: npm, yarn, webpack
+- Back-end: Spring (Boot, Data, Security), JPA / Hibernate, PostgreSQL, JUnit, Mockito
+- Front-end: TypeScript, React.js, Redux, Jest, Bootstrap, CSS
+- Security: JWT, OAuth2 Google, Facebook, Github
+- REST API, GraphQL API
+- AWS: EC2, S3, PostgreSQL RDS
+- Server Build: Maven
+- Client Build: npm, yarn, webpack
 
 ## Features
 
-* Authentication with JWT and Email validation.
-* Authentication with Google, Facebook or Github
-* Customers can search for the product according to the specified criteria.
-* Customers can add and delete products from the shopping cart.
-* Customers can order the products in the shopping cart.
-* Customers can change their password and view their orders.
-* Admin can add or modify a product.
-* Admin can change the data of any user.
-* Admin can view orders of all users.
+- Authentication with JWT and Email validation.
+- Authentication with Google, Facebook or Github
+- Customers can search for the product according to the specified criteria.
+- Customers can add and delete products from the shopping cart.
+- Customers can order the products in the shopping cart.
+- Customers can change their password and view their orders.
+- Admin can add or modify a product.
+- Admin can change the data of any user.
+- Admin can view orders of all users.
 
 ## Installation
 
@@ -55,23 +52,22 @@ http://localhost:8080/swagger-ui.html
 
 ## Screenshots
 
-Menu page  |  Product page
-:------------------------:|:-------------------------:
-![Menu page](https://i.ibb.co/dcp56tb/menu.jpg)  |  ![Product page](https://i.ibb.co/1dBjdMy/product.jpg)
+|                    Menu page                    |                     Product page                      |
+| :---------------------------------------------: | :---------------------------------------------------: |
+| ![Menu page](https://i.ibb.co/dcp56tb/menu.jpg) | ![Product page](https://i.ibb.co/1dBjdMy/product.jpg) |
 
-Email template  |  List of users
-:------------------------:|:-------------------------:
-![Email template](https://i.ibb.co/bmKTLPJ/email-template.jpg)  |  ![List of users](https://i.ibb.co/T88cFZt/all-users.jpg)
+|                         Email template                         |                      List of users                       |
+| :------------------------------------------------------------: | :------------------------------------------------------: |
+| ![Email template](https://i.ibb.co/bmKTLPJ/email-template.jpg) | ![List of users](https://i.ibb.co/T88cFZt/all-users.jpg) |
 
-List of orders  |  User order page
-:------------------------:|:-------------------------:
-![List of orders](https://i.ibb.co/T88cFZt/all-users.jpg)  |  ![User order page](https://i.ibb.co/4f7F0hk/all-orders.jpg)
+|                      List of orders                       |                       User order page                       |
+| :-------------------------------------------------------: | :---------------------------------------------------------: |
+| ![List of orders](https://i.ibb.co/T88cFZt/all-users.jpg) | ![User order page](https://i.ibb.co/4f7F0hk/all-orders.jpg) |
 
-User profile page  |  Add perfume page
-:------------------------:|:-------------------------:
-![User profile page](https://i.ibb.co/KDF3FZX/user-page.jpg)  |  ![Add perfume page](https://i.ibb.co/KGKhJxR/add-perfume.jpg)
+|                      User profile page                       |                       Add perfume page                        |
+| :----------------------------------------------------------: | :-----------------------------------------------------------: |
+| ![User profile page](https://i.ibb.co/KDF3FZX/user-page.jpg) | ![Add perfume page](https://i.ibb.co/KGKhJxR/add-perfume.jpg) |
 
-Edit perfume list  |  Edit perfume page
-:------------------------:|:-------------------------:
-![Edit perfume list](https://i.ibb.co/fkFSnFy/edit.jpg)  |  ![Edit perfume page](https://i.ibb.co/cTddspr/edit-perfume.jpg)
-
+|                    Edit perfume list                    |                        Edit perfume page                        |
+| :-----------------------------------------------------: | :-------------------------------------------------------------: |
+| ![Edit perfume list](https://i.ibb.co/fkFSnFy/edit.jpg) | ![Edit perfume page](https://i.ibb.co/cTddspr/edit-perfume.jpg) |
