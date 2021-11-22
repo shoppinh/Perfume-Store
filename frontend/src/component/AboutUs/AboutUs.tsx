@@ -33,10 +33,10 @@ const AboutUs: FC = () => {
           </div>
           <div className="AboutUs-Button-list">
             <div className="AboutUs-Button">
-              <a href="#">About Us</a>
+              <a href="/about">About Us</a>
             </div>
             <div className="AboutUs-Button2">
-              <a href="">Shop Online</a>
+              <a href="/menu">Shop Online</a>
             </div>
           </div>
         </div>

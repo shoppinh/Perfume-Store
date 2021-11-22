@@ -18,8 +18,8 @@ const Introduction: FC = () => {
             </p>
           </div>
           <div className="element-button">
-            <a href="#" className="">
-              Learn More
+            <a href="/menu" className="">
+              Shop Now
             </a>
           </div>
         </div>
