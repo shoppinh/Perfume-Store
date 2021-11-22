@@ -1,0 +1,85 @@
+.About-BG {
+  background-image: url(../../resources/img/about-BG.jpg);
+  width: 100%;
+  height: 450px;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+}
+.About-BG h1 {
+  padding-top: 20px;
+  padding-left: 40px;
+  font-size: 80px;
+  line-height: 1.2em;
+  font-weight: 400;
+}
+.About-Wrapper {
+  width: 1140px;
+  margin: 0 auto;
+}
+.About__Introduction {
+  margin-top: 40px;
+
+  text-align: center;
+}
+.About__Introduction h3 {
+  font-size: 38px;
+  line-height: 1.4737em;
+}
+.About__Summary-BG {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.About__Summary-BG .icon,
+.About__Summary-BG .background,
+.About__Summary-BG .frame {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  bottom: 0;
+  width: 196px;
+  height: 196px;
+  fill: #eaaa85;
+  z-index: 1;
+}
+.About__Summary-BG .frame {
+  fill: #333;
+  z-index: 3;
+}
+.About__Summary-BG .background {
+  z-index: 2;
+  opacity: 0.1;
+}
+.About__Summary-BG svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.About__Summary {
+  display: flex;
+  justify-content: space-between;
+}
+.About__Team {
+  margin-top: 60px;
+}
+.About__Team h2 {
+  font-size: 38px;
+  line-height: 1.4737em;
+}
+.About__Team-Description {
+  display: flex;
+  justify-content: space-between;
+}
+.About__Team-Member {
+  height: 476px;
+  width: 350px;
+  text-align: center;
+}
+.About__Team-Member h5 {
+  margin-top: 10px;
+}
+.About__Team-Member img {
+  width: 100%;
+  height: 70%;
+}

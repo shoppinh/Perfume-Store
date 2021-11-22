@@ -34,9 +34,9 @@ const NavBar: FC = () => {
     links = (
       <li className="nav-item">
         <Link to={"/account"}>
-          <span className="nav-link pl-5 pr-5">
-            <FontAwesomeIcon className="mr-2" icon={faUser} />
-            MY ACCOUNT
+          <span className="nav-link ">
+            <FontAwesomeIcon className="mr-1" icon={faUser} />
+            My Account
           </span>
         </Link>
       </li>
@@ -44,7 +44,7 @@ const NavBar: FC = () => {
     signOut = (
       <Link to={"/"} onClick={handleLogout}>
         <FontAwesomeIcon className="mr-2" icon={faSignOutAlt} />
-        EXIT
+        Exit
       </Link>
     );
   } else {
@@ -53,13 +53,13 @@ const NavBar: FC = () => {
         <li className="nav-item">
           <Link to={"/login"} className="nav-link pl-5 pr-3">
             <FontAwesomeIcon className="mr-2" icon={faSignInAlt} />
-            SIGN IN
+            Sign In
           </Link>
         </li>
         <li className="nav-item">
           <Link to={"/registration"} className="nav-link">
             <FontAwesomeIcon className="mr-2" icon={faUserPlus} />
-            SIGN UP
+            Sign Up
           </Link>
         </li>
       </>
@@ -100,7 +100,7 @@ const NavBar: FC = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to={"/contacts"}>
+                <Link to={"/about"}>
                   <span className="nav-link pl-5 pr-5">About Us</span>
                 </Link>
               </li>

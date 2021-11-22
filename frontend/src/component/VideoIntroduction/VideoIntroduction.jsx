@@ -29,9 +29,9 @@ const VideoIntroduction = () => {
             onClose={() => setOpen(false)}
           />
 
-          <button className="btn-primary" onClick={() => setOpen(true)}>
+          {/* <button className="btn-primary" onClick={() => setOpen(true)}>
             Click here
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
