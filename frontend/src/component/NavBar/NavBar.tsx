@@ -51,7 +51,7 @@ const NavBar: FC = () => {
     links = (
       <>
         <li className="nav-item">
-          <Link to={"/login"} className="nav-link pl-5 pr-3">
+          <Link to={"/login"} className="nav-link pl-3 pr-3">
             <FontAwesomeIcon className="mr-2" icon={faSignInAlt} />
             Sign In
           </Link>
@@ -69,7 +69,7 @@ const NavBar: FC = () => {
 
   return (
     <div>
-      <div className="container-fluid bg-white">
+      <div className="container-fluid bg-white" style={{ maxWidth: "1300px" }}>
         <nav
           id="navbar-main"
           className={`container navbar navbar-expand-lg bg-black text-white `}
@@ -85,23 +85,41 @@ const NavBar: FC = () => {
             <ul className="navbar-nav">
               <li className="nav-item">
                 <Link to={"/"}>
-                  <span className="nav-link pl-5 pr-5">Home</span>
+                  <span className="nav-link pl-3 pr-3">Home</span>
                 </Link>
               </li>
 
               <li className="nav-item">
                 <Link to={{ pathname: "/menu", state: { id: "all" } }}>
-                  <span className="nav-link pl-5 pr-5">Perfume</span>
+                  <span className="nav-link pl-3 pr-3">Perfume</span>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link to={"/contacts"}>
-                  <span className="nav-link pl-5 pr-5">Contact Us</span>
+                  <span className="nav-link pl-3 pr-3">Contact Us</span>
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link to={"/about"}>
+                  <span className="nav-link pl-3 pr-3">About Us</span>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to={"/about"}>
-                  <span className="nav-link pl-5 pr-5">About Us</span>
+                <Link className="nav-link" to={"/cart"}>
+                  <i className="fas fa-shopping-cart fa-lg pl-3"></i>
+                  <h5
+                    className="d-inline"
+                    style={{
+                      position: "relative",
+                      right: "15px",
+                      bottom: "8px",
+                    }}
+                  >
+                    <span className="badge badge-success">
+                      {perfumes.length}
+                    </span>
+                  </h5>
                 </Link>
               </li>
               {links}

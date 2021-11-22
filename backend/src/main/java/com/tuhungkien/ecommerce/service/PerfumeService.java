@@ -33,4 +33,6 @@ public interface PerfumeService {
     List<Perfume> findPerfumeMostStar(Integer number);
 
     List<Perfume> findPerfumeYear(Integer number);
+
+    List<Perfume> findPerfumePopular(Integer number);
 }

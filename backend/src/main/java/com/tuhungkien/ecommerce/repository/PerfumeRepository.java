@@ -33,4 +33,8 @@ public interface PerfumeRepository extends JpaRepository<Perfume, Long> {
     @Modifying
     @Query(value = "SELECT * FROM perfume where year is not null order by year desc limit ?1 offset 0", nativeQuery = true)
     List<Perfume> findPerfumeYear(Integer number);
+
+    @Modifying
+    @Query(value = "SELECT * FROM perfume where year is not null order by random() desc limit ?1 offset 0", nativeQuery = true)
+    List<Perfume> findPerfumePopular(Integer number);
 }

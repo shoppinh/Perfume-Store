@@ -70,6 +70,12 @@ public class PerfumeController {
         return ResponseEntity.ok(perfumeMapper.findPerfumeMostStar(number));
     }
 
+    @GetMapping("/most-popular/{num}")
+    public ResponseEntity<List<PerfumeResponse>> getPerfumePopular(@PathVariable("num") Integer number) {
+        return ResponseEntity.ok(perfumeMapper.findPerfumePopular(number));
+    }
+
+
     @GetMapping("/get-newest-perfumes/{num}")
     public ResponseEntity<List<PerfumeResponse>> findPerfumeYear(@PathVariable("num") Integer number) {
         return ResponseEntity.ok(perfumeMapper.findPerfumeYear(number));

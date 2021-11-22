@@ -161,4 +161,9 @@ public class PerfumeServiceImpl implements PerfumeService {
     public List<Perfume> findPerfumeYear(Integer number) {
         return perfumeRepository.findPerfumeYear(number);
     }
+
+    @Override
+    public List<Perfume> findPerfumePopular(Integer number){
+        return perfumeRepository.findPerfumePopular(number);
+    }
 }

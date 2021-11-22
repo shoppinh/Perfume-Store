@@ -72,4 +72,8 @@ public class PerfumeMapper {
     public List<PerfumeResponse> findPerfumeYear(Integer number) {
         return convertListToResponseDto(perfumeService.findPerfumeYear(number));
     }
+
+    public List<PerfumeResponse> findPerfumePopular(Integer number) {
+        return convertListToResponseDto(perfumeService.findPerfumePopular(number));
+    }
 }

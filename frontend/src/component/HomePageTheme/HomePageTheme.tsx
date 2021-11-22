@@ -27,7 +27,6 @@ const HomePageTheme: FC = () => {
               <Link to={{ pathname: "/menu", state: { id: "male" } }}>
                 See More
               </Link>
-              See More
             </div>
           </div>
         </div>

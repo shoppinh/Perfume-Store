@@ -162,11 +162,7 @@ const Product: FC<RouteComponentProps<{ id: string }>> = ({ match }) => {
                 <h6 className="mr-5">
                   <span>${perfume.price}</span>.00
                 </h6>
-                <button
-                  type="submit"
-                  className="btn btn-success mx-3"
-                  onClick={addToCart}
-                >
+                <button className="btn btn-success mx-3" onClick={addToCart}>
                   <FontAwesomeIcon className="mr-2 fa-lg" icon={faCartPlus} />{" "}
                   ADD TO CART
                 </button>
