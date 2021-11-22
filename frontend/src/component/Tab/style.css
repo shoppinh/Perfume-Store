@@ -1,0 +1,6 @@
+.grid-card{
+    grid-template-columns: repeat(4, minmax(262.5px,1fr));
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+}

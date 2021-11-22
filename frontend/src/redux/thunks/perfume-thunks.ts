@@ -1,4 +1,4 @@
-import {Dispatch} from "redux";
+import { Dispatch } from "redux";
 
 import {
     getPerfumes,
@@ -10,8 +10,8 @@ import {
     fetchPerfumeSuccess,
     loadingPerfume
 } from "../actions/perfume-actions";
-import {FilterParamsType, Perfume} from "../../types/types";
-import {gePerfumesByIdsQuery, getAllPerfumesByQuery, getPerfumeByQuery} from "../../utils/graphql-query/perfume-query";
+import { FilterParamsType, Perfume } from "../../types/types";
+import { gePerfumesByIdsQuery, getAllPerfumesByQuery, getPerfumeByQuery } from "../../utils/graphql-query/perfume-query";
 import RequestService from '../../utils/request-service';
 
 export const fetchPerfumes = () => async (dispatch: Dispatch) => {
@@ -57,18 +57,36 @@ export const fetchPerfumeReviewsWS = (response: Perfume) => async (dispatch: Dis
 // GraphQL thunks
 export const fetchPerfumesByQuery = () => async (dispatch: Dispatch) => {
     dispatch(loadingPerfume());
-    const response = await RequestService.post("/perfumes/graphql/perfumes", {query: getAllPerfumesByQuery});
+    const response = await RequestService.post("/perfumes/graphql/perfumes", { query: getAllPerfumesByQuery });
     dispatch(fetchPerfumesByQuerySuccess(response.data.data.perfumes));
 };
 
 export const fetchPerfumeByQuery = (id: string) => async (dispatch: Dispatch) => {
     dispatch(loadingPerfume());
-    const response = await RequestService.post("/perfumes/graphql/perfume", {query: getPerfumeByQuery(id)});
+    const response = await RequestService.post("/perfumes/graphql/perfume", { query: getPerfumeByQuery(id) });
     dispatch(fetchPerfumeByQuerySuccess(response.data.data.perfume));
 };
 
 export const fetchPerfumesByIdsQuery = (ids: Array<number>) => async (dispatch: Dispatch) => {
     dispatch(loadingPerfume());
-    const response = await RequestService.post("/perfumes/graphql/ids", {query: gePerfumesByIdsQuery(ids)});
+    const response = await RequestService.post("/perfumes/graphql/ids", { query: gePerfumesByIdsQuery(ids) });
     dispatch(fetchPerfumesByQuerySuccess(response.data.data.perfumesIds));
 };
+
+export const fetchPerfumesMostStar = (num: number) => async (dispatch: Dispatch) => {
+    dispatch(loadingPerfume());
+    const response = await RequestService.get("/perfumes/most-star/" + num);
+    dispatch(fetchPerfumeSuccess(response.data));
+}
+
+export const fetchPerfumesNewest = (num: number) => async (dispatch: Dispatch) => {
+    dispatch(loadingPerfume());
+    const response = await RequestService.get("/perfumes/get-newest-perfumes/" + num);
+    dispatch(fetchPerfumeSuccess(response.data));
+}
+
+export const fetchPerfumesPopular = (num: number) => async (dispatch: Dispatch) => {
+    dispatch(loadingPerfume());
+    const response = await RequestService.get("/perfumes/most-popular/" + num);
+    dispatch(fetchPerfumeSuccess(response.data));
+}

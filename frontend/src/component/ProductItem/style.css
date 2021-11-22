@@ -1,0 +1,55 @@
+.card-item{
+    margin: 0 15px 0px 15px;
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img:hover .card-image{
+    transform: scale(1.2);
+}
+
+.card-sec-img{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.card-img{
+    background-color: #f6f1ee;
+}
+
+.card-image{
+    /* height: auto;
+    max-width: 100%; */
+    margin: 20px 20px;
+    padding: 0px 0px;
+    border: none;
+    border-radius:0;
+    width: 222.5px;
+    height: 222.5px;
+    object-fit: cover;
+    transition-duration: .3s;
+    transition-property: transform;
+}
+.card-title{
+    font-family: "Questrial", Sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #a05f43;
+    margin-bottom: 20px;
+}
+.card-content{
+    margin: -10px 0px 0px 0px ;
+    text-align: center;
+}
+
+.card-price{
+    text-align: center;
+    color: #000000;
+    font-family: "DM Sans", Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+}
