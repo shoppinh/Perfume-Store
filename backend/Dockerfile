@@ -30,6 +30,6 @@
 
 # For docker build
 FROM openjdk:11-jdk
-ADD backend/target/ecommerce-0.0.1-SNAPSHOT.jar ecommerce-0.0.1-SNAPSHOT.jar
+ADD /backend/target/ecommerce-0.0.1-SNAPSHOT.jar ecommerce-0.0.1-SNAPSHOT.jar
 ENTRYPOINT [ "java","-jar","ecommerce-0.0.1-SNAPSHOT.jar" ]
 EXPOSE 8080
