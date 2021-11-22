@@ -117,6 +117,12 @@ const Contacts: FC = () => {
           </div>
         </div>
       </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.4912667595468!2d105.7590120150247!3d20.972935686028706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313453a9eaa566d3%3A0x40d4cb79f455ca83!2sSATSi!5e0!3m2!1sen!2s!4v1637589313251!5m2!1sen!2s"
+        height="450"
+        style={{ border: "none", width: "100%" }}
+        loading="lazy"
+      ></iframe>
     </div>
   );
 };
