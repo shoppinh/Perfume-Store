@@ -19,7 +19,7 @@ FROM openjdk:11-jdk
 
 RUN ls -l
 # Add Spring Boot authentication-service.jar to Container
-COPY --from=0  /backend/ecommerce_staging/target/ecommerce-0.0.1-SNAPSHOT.jar ecommerce-0.0.1-SNAPSHOT.jar
+COPY --from=0  /ecommerce_staging/target/ecommerce-0.0.1-SNAPSHOT.jar ecommerce-0.0.1-SNAPSHOT.jar
 
 # Fire up our Spring Boot app by default
 CMD ["sh", "-c", "java -Dserver.port=8080 -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8 -XX:+UseContainerSupport  -Djava.security.egd=file:/dev/./urandom -jar ecommerce-0.0.1-SNAPSHOT.jar" ]
